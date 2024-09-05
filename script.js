@@ -42,7 +42,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
     }
 
-    // Fetch initial weather data for the default city
     fetchWeatherData('Iligan');
 
     document.getElementById('searchButton').addEventListener('click', () => {
