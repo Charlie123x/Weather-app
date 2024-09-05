@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Weather Update - Iligan City</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        background-size: cover;
+        background-image: url(https://i.pinimg.com/originals/32/0f/55/320f55b25e9580ac3c7c7825e5843dcf.gif);
+    }
+
+    .header {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.37);
+        padding: 15px;
+        top: 0;
+        position: sticky;
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+        font-size: 300%;
+    }
+    .weather-container {
+        border: solid black 2px;
+        border-radius: 50px;
+        width: 50%;
+        background-color: rgba(248, 255, 255, 0.212);
+        margin: 5% 1%;
+        font-size: 150%;
+        padding: 38px;
+    }
+    .weather-item{
+        font-size: 119%;
+        border-radius: 25px;
+        border: solid rgba(248, 255, 255, 0.212);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .map {
+        height: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -220px;
+        
+    }
+    footer {
+        font-size: 175%;
+        text-align: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.37);
+        padding: 15px;
+        bottom: 0;
+        position: absolute;
+    }
+    
+    div#weather {
+    display: flex;
+    padding: 15px;
+    }
+    #cityInput {
+        width: 10%;
+        height: 3vh;
+        background-color: white;
+        box-shadow: 2px 2px 0 0;
+        border: transparent;
+    }
+
+    #searchButton {
+        width: 5%;
+        height: 3.5vh;
+        background-color: white;
+        box-shadow: 2px 2px 0 0;
+        border: transparent;
+        color: black;
+        margin-right: 50px;
+        margin-left: 5px;
+    }
+
+    .searchWrapper {
+        text-align: right;
+    }
+</style>
+<body>
+    <div class="header">
+        <div class="searchWrapper">
+            <input type="text" id="cityInput" placeholder="Search City Name">  
+            <button id="searchButton">Search</i></button>
+        </div>
+    </div>
+    <h1 class="location-label">Iligan City</h1>
+    <div id="weather">
+    </div>
+
+    <footer>Charlie T. Gadapan | 8/15/2024</footer>
+</body>
+</html>
